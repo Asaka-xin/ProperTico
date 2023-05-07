@@ -1,9 +1,10 @@
 <p align="center">
     <a target="blank">
-    <img src="https://onebottle-1312477531.cos.ap-chengdu.myqcloud.com/works/logo_waifu4x.png" width="300" height="300">
+    <img src="./sundry/assets/logo_waifu4x.png" width="300" height="300">
     </a>
     <h1 align="center">ProperTico</h1>
 </p>
+
 **简述**：智能物业管理系统，"智能"就是唯心上的智能。
 
 *"ProperTico"是一个非常有趣和创新的项目名称选择。它结合了"Property"和"Tico"的词语，可以引起人们的好奇心和兴趣。"Tico"是"Costa Rican"的缩写，而在某些语言中也意味着小东西或小朋友。这个单词可以表达出项目的简洁和易用性，以及对客户的关注和关怀。*

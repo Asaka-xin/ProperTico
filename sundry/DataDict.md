@@ -1,9 +1,10 @@
 <p align="center">
     <a target="blank">
-    <img src="https://onebottle-1312477531.cos.ap-chengdu.myqcloud.com/works/logo_waifu4x.png" width="300" height="300">
+    <img src="./assets/logo_waifu4x.png" width="300" height="300">
     </a>
     <h1 align="center">数据字典</h1>
 </p>
+
 
 ## 检索
 
