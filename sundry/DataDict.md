@@ -4,6 +4,10 @@
     </a>
     <h1 align="center">数据字典</h1>
 </p>
+<p align="center">
+	<img src="./assets/ER.ProperTico.png">
+    <h2 align="center">实体关系映射图</h2>
+</p>
 
 
 ## 检索
