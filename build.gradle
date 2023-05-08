@@ -8,12 +8,26 @@ group = 'com.prprv'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '17'
 
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+    configureEach {
+
+    }
+}
+
 repositories {
+    maven { url 'https://maven.aliyun.com/repository/public' }
     mavenCentral()
 }
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'com.baomidou:mybatis-plus-boot-starter:3.5.3.1'
+    compileOnly 'org.projectlombok:lombok:1.18.26'
+    runtimeOnly 'com.mysql:mysql-connector-j:8.0.33'
+    annotationProcessor 'org.projectlombok:lombok:1.18.26'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
