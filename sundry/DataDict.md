@@ -74,11 +74,11 @@ buildings
 
 parkingspaces
 
-|    字段     |   数据类型   |            约束             |   注释   |  备注   |
-| :---------: | :----------: | :-------------------------: | :------: | :-----: |
-|     id      |    BIGINT    | PRIMARY KEY, AUTO_INCREMENT | 车位编号 |    /    |
-| parkingtype |     ENUM     |          NOT NULL           | 车位类型 | 枚举A/B |
-|  building   | VARCHAR(255) |          NOT NULL           | 所属房产 |    /    |
+|    字段     |   数据类型   |            约束             |   注释   | 备注 |
+| :---------: | :----------: | :-------------------------: | :------: | :--: |
+|     id      |    BIGINT    | PRIMARY KEY, AUTO_INCREMENT | 车位编号 |  /   |
+| parkingtype | VARCHAR(255) |          NOT NULL           | 车位类型 | A/B  |
+|  building   | VARCHAR(255) |          NOT NULL           | 所属房产 |  /   |
 
 ## 投诉表
 
@@ -95,16 +95,16 @@ complaints
 
 payments
 
-|   字段   |   数据类型   |            约束             |   注释   | 备注 |
-| :------: | :----------: | :-------------------------: | :------: | :--: |
-|    id    |    BIGINT    | PRIMARY KEY, AUTO_INCREMENT | 缴费编号 |  /   |
-|   user   | VARCHAR(255) |          NOT NULL           | 缴费户号 |  /   |
-| pay_time |     DATE     |          NOT NULL           | 缴费时间 |  /   |
-| pay_num  |     INT      |          NOT NULL           | 缴费金额 |  /   |
+|    字段    |   数据类型   |            约束             |   注释   | 备注 |
+| :--------: | :----------: | :-------------------------: | :------: | :--: |
+|     id     |    BIGINT    | PRIMARY KEY, AUTO_INCREMENT | 缴费编号 |  /   |
+|    user    | VARCHAR(255) |          NOT NULL           | 缴费户号 |  /   |
+|  pay_time  |     DATE     |          NOT NULL           | 缴费时间 |  /   |
+| pay_amount |     INT      |          NOT NULL           | 缴费金额 |  /   |
 
 ## 访客表
 
-vistors
+visitors
 
 |  字段   |   数据类型   |            约束             |   注释   | 备注 |
 | :-----: | :----------: | :-------------------------: | :------: | :--: |

@@ -41,17 +41,17 @@ create table parkingspaces
 (
     id          bigint auto_increment
         primary key,
-    parkingtype enum ('a', 'b') null,
-    building    varchar(255)    not null
+    parkingtype varchar(255) null,
+    building    varchar(255) not null
 );
 
 create table payments
 (
-    id       bigint auto_increment
+    id         bigint auto_increment
         primary key,
-    user     varchar(255) not null,
-    pay_time datetime     not null comment 'time for bill',
-    pay_num  int          not null
+    user       varchar(255) not null,
+    pay_time   datetime     not null comment 'time for bill',
+    pay_amount int          not null
 );
 
 create table properties
@@ -75,7 +75,7 @@ create table user
     create_time datetime     null comment 'time for registry'
 );
 
-create table vistors
+create table visitors
 (
     id      bigint auto_increment
         primary key,
