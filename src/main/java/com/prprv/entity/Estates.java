@@ -23,4 +23,8 @@ public class Estates {
     private String name;
     private String address;
     private Integer esphone;
+
+    public Estates() {
+
+    }
 }

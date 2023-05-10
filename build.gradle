@@ -25,6 +25,12 @@ repositories {
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'com.baomidou:mybatis-plus-boot-starter:3.5.3.1'
+    implementation 'tk.mybatis:mapper-spring-boot-starter:4.2.2'
+    implementation 'com.github.pagehelper:pagehelper-spring-boot-starter:1.4.6'
+    implementation 'commons-fileupload:commons-fileupload:1.5'
+    implementation 'org.junit.vintage:junit-vintage-engine:5.9.2'
+    implementation 'com.alibaba:fastjson:2.0.25'
+    implementation 'javax.servlet:javax.servlet-api:4.0.1'
     compileOnly 'org.projectlombok:lombok:1.18.26'
     runtimeOnly 'com.mysql:mysql-connector-j:8.0.33'
     annotationProcessor 'org.projectlombok:lombok:1.18.26'
