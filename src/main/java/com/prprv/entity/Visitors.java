@@ -6,8 +6,10 @@ import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
+import java.time.LocalDateTime;
+
 /**
- * who visited estate
+ * 访客实体类
  * @author Christine
  * @version 1.0
  * @since 2023/5/8
@@ -18,8 +20,21 @@ import lombok.Data;
 @TableName("visitors")
 public class Visitors {
 
+    /**
+     * 序列号
+     */
     @TableId(type = IdType.AUTO)
     private Long id;
+    /**
+     * 访客姓名
+     */
     private String name;
+    /**
+     * 访问小区
+     */
     private String estates;
+    /**
+     * 访问时间
+     */
+    private LocalDateTime visitTime;
 }

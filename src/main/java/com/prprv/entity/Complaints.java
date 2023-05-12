@@ -9,7 +9,7 @@ import lombok.Data;
 import java.time.LocalDateTime;
 
 /**
- * complaint table
+ * 投诉实体类
  * @author Christine
  * @version 1.0
  * @since 2023/5/8
@@ -20,9 +20,21 @@ import java.time.LocalDateTime;
 @TableName("complaints")
 public class Complaints {
 
+    /**
+     * 投诉单编号
+     */
     @TableId(type = IdType.AUTO)
     private Long id;
+    /**
+     * 创建时间
+     */
     private LocalDateTime createTime;
+    /**
+     * 投诉描述
+     */
     private String description;
+    /**
+     * 状态
+     */
     private String status;
 }
