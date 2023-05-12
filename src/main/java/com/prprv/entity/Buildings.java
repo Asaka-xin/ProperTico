@@ -18,8 +18,18 @@ import lombok.Data;
 @TableName("buildings")
 public class Buildings {
 
+    /**
+     * 楼栋编号
+     */
     @TableId(type = IdType.AUTO)
     private Long id;
+    /**
+     * 所属小区
+     */
     private String estates;
+    /**
+     * 楼层数
+     * 默认20层
+     */
     private Integer floor;
 }

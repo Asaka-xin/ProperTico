@@ -6,7 +6,7 @@ import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 
 /**
  * 访客实体类
@@ -20,9 +20,21 @@ import java.util.Date;
 @TableName("visitors")
 public class Visitors {
 
+    /**
+     * 序列号
+     */
     @TableId(type = IdType.AUTO)
     private Long id;
+    /**
+     * 访客姓名
+     */
     private String name;
+    /**
+     * 访问小区
+     */
     private String estates;
-    private Date visitTime;
+    /**
+     * 访问时间
+     */
+    private LocalDateTime visitTime;
 }

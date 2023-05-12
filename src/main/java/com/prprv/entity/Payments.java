@@ -20,9 +20,21 @@ import java.time.LocalDateTime;
 @TableName("payments")
 public class Payments {
 
+    /**
+     * 缴费编号
+     */
     @TableId(type = IdType.AUTO)
     private Long id;
+    /**
+     * 缴费户号
+     */
     private String user;
+    /**
+     * 缴费时间
+     */
     private LocalDateTime payTime;
+    /**
+     * 缴费金额
+     */
     private Integer payAmount;
 }

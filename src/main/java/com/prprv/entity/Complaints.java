@@ -20,9 +20,21 @@ import java.time.LocalDateTime;
 @TableName("complaints")
 public class Complaints {
 
+    /**
+     * 投诉单编号
+     */
     @TableId(type = IdType.AUTO)
     private Long id;
+    /**
+     * 创建时间
+     */
     private LocalDateTime createTime;
+    /**
+     * 投诉描述
+     */
     private String description;
+    /**
+     * 状态
+     */
     private String status;
 }
