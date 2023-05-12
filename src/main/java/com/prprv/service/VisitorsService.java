@@ -8,6 +8,7 @@ import com.prprv.entity.Visitors;
  * @author Christine
  * @version 1.0
  * @since 2023/5/11
+ * @see VisitorsServiceImpl
  */
 public interface VisitorsService {
 
@@ -20,8 +21,8 @@ public interface VisitorsService {
 
     /**
      * 查询访客记录
-     * @param visitors 访客信息
+     * @param name 访客名字
      * @return Result
      */
-    Result<Object> getVisitors(Visitors visitors);
+    Result<Object> getVisitors(String name);
 }
