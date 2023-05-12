@@ -39,8 +39,7 @@ public class SecurityConfiguration {
                 // 不需要身份认证的请求
                 .requestMatchers("/api/auth/authorize","/api/auth/token").anonymous()
                 // 其他所有请求都需要登录
-                // todo 需要验证时改为 authenticated()
-                .anyRequest().anonymous()
+                .anyRequest().authenticated()
                 .and()
                 // 异常处理
                 .exceptionHandling()
