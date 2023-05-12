@@ -106,11 +106,12 @@ payments
 
 visitors
 
-|  字段   |   数据类型   |            约束             |   注释   | 备注 |
-| :-----: | :----------: | :-------------------------: | :------: | :--: |
-|   id    |    BIGINT    | PRIMARY KEY, AUTO_INCREMENT |  序列号  |  /   |
-|  name   | VARCHAR(255) |          NOT NULL           | 访客姓名 |  /   |
-| estates | VARCHAR(255) |          NOT NULL           | 访问小区 |  /   |
+|   字段    |     数据类型     |             约束              |  注释  | 备注 |
+|:-------:|:------------:|:---------------------------:|:----:|::|
+|   id    |    BIGINT    | PRIMARY KEY, AUTO_INCREMENT | 序列号  |  / |
+|  name   | VARCHAR(255) |          NOT NULL           | 访客姓名 |  / |
+| estates | VARCHAR(255) |          NOT NULL           | 访问小区 |  / |
+|  visitTime |     Date     |      NOT NULL               | 访问时间 | / |
 
 ## 房产表
 

@@ -6,6 +6,8 @@ import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
+import java.util.Date;
+
 /**
  * 访客实体类
  * @author Christine
@@ -22,4 +24,5 @@ public class Visitors {
     private Long id;
     private String name;
     private String estates;
+    private Date visitTime;
 }
