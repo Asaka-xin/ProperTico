@@ -24,11 +24,11 @@ public class UserServiceImpl implements UserService{
         try{
             QueryWrapper<User> queryWrapper = new QueryWrapper<>();
             queryWrapper.eq("name",user.getName());
-            if(userMapper.selectOne(queryWrapper)!=null){
-                queryWrapper.clear();
+            User selectUser = userMapper.selectOne(queryWrapper);
+            queryWrapper.clear();
+            if(selectUser != null){
                 return ResultUtil.error(ResultEnum.OWNER_DUPLICATE);
             }
-            queryWrapper.clear();
             user.setId(null);
             userMapper.insert(user);
             return ResultUtil.success();
