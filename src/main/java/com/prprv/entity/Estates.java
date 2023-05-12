@@ -7,7 +7,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 
 /**
- * estate table
+ * 小区实体类
  * @author Christine
  * @version 1.0
  * @since 2023/5/8

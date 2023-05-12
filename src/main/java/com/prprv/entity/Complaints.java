@@ -9,7 +9,7 @@ import lombok.Data;
 import java.time.LocalDateTime;
 
 /**
- * complaint table
+ * 投诉实体类
  * @author Christine
  * @version 1.0
  * @since 2023/5/8

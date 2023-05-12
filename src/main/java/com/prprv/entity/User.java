@@ -9,7 +9,7 @@ import lombok.Data;
 import java.time.LocalDateTime;
 
 /**
- * user table
+ * 用户实体类
  * @author Christine
  * @version 1.0
  * @since 2023/5/8
