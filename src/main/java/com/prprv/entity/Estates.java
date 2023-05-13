@@ -34,5 +34,5 @@ public class Estates {
     /**
      * 小区电话
      */
-    private Integer esphone;
+    private String esphone;
 }
