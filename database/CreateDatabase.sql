@@ -41,7 +41,8 @@ create table parkingspaces
     id          bigint auto_increment
         primary key,
     parkingtype varchar(255) null,
-    building    varchar(255) not null
+    building    varchar(255) not null,
+    owner       bigint       null
 );
 
 create table payments
