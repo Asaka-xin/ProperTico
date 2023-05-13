@@ -15,6 +15,7 @@ import org.springframework.stereotype.Service;
  * @author phj233
  * @since 2023/5/13 14:17
  */
+
 @Service
 @Slf4j
 @RequiredArgsConstructor
@@ -22,7 +23,6 @@ public class PaymentsServiceImpl implements PaymentsService{
     final private PaymentsMapper paymentsMapper;
     /**
      * 创建缴费记录
-     *
      * @param payments 缴费信息
      * @return Result
      */
@@ -47,7 +47,6 @@ public class PaymentsServiceImpl implements PaymentsService{
 
     /**
      * 查询所有缴费记录
-     *
      * @return Result
      */
     @Override
@@ -62,7 +61,6 @@ public class PaymentsServiceImpl implements PaymentsService{
 
     /**
      * 分页查询缴费记录
-     *
      * @param page 页码
      * @param size 每页数量
      * @return Result
@@ -81,7 +79,6 @@ public class PaymentsServiceImpl implements PaymentsService{
 
     /**
      * 根据缴费人查询缴费记录
-     *
      * @param user 缴费户号
      * @return Result
      */
@@ -99,7 +96,6 @@ public class PaymentsServiceImpl implements PaymentsService{
 
     /**
      * 删除缴费记录
-     *
      * @param id 缴费编号
      */
     @Override
