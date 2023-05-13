@@ -24,7 +24,6 @@ public class ComplaintsServiceImpl implements ComplaintsService{
 
     /**
      * 创建投诉记录
-     *
      * @param complaints 投诉信息
      * @return Result
      */
@@ -47,8 +46,7 @@ public class ComplaintsServiceImpl implements ComplaintsService{
     }
 
     /**
-     * 查询投诉记录
-     *
+     * 根据ID查询投诉记录
      * @param id 投诉编号
      * @return Result
      */
@@ -64,7 +62,6 @@ public class ComplaintsServiceImpl implements ComplaintsService{
 
     /**
      * 分页查询投诉记录
-     *
      * @param page 页码
      * @param size 每页数量
      * @return Result
@@ -82,7 +79,6 @@ public class ComplaintsServiceImpl implements ComplaintsService{
 
     /**
      * 查询所有投诉记录
-     *
      * @return Result
      */
     @Override
@@ -97,7 +93,6 @@ public class ComplaintsServiceImpl implements ComplaintsService{
 
     /**
      * 处理投诉记录
-     *
      * @param complaints 投诉信息
      * @return Result
      */
@@ -114,7 +109,6 @@ public class ComplaintsServiceImpl implements ComplaintsService{
 
     /**
      * 删除投诉记录
-     *
      * @param id 投诉编号
      * @return Result
      */
