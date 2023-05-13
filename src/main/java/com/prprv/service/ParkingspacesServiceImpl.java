@@ -124,9 +124,9 @@ public class ParkingspacesServiceImpl implements ParkingspacesService{
      * @return Result
      */
     @Override
-    public Result<Object> deleteParkingspacesById(Long id) {
+    public Result<Object> deleteParkingspacesById(Parkingspaces parkingspaces) {
         try{
-            parkingspacesMapper.deleteById(id);
+            parkingspacesMapper.deleteById(parkingspaces.getId());
             return ResultUtil.success();
         }catch (Exception e) {
             log.error("根据停车位编号删除停车位失败，原因：{}", e.getMessage());

@@ -51,7 +51,7 @@ public interface ParkingspacesService {
      * @param id 停车位编号
      * @return Result
      */
-    Result<Object> deleteParkingspacesById(Long id);
+    Result<Object> deleteParkingspacesById(Parkingspaces parkingspaces);
 
     /**
      * 根据停车位编号修改停车位信息
