@@ -28,10 +28,10 @@ public interface EstatesService {
 
     /**
      * 删除小区信息
-     * @param estatesId 小区id
+     * @param estates 小区id
      * @return Result
      */
-    Result<Object> deleteEstatesById(Long estatesId);
+    Result<Object> deleteEstatesById(Estates estates);
 
     /**
      * 小区信息展示

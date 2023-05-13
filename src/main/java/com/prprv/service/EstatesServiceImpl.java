@@ -67,13 +67,13 @@ public class EstatesServiceImpl implements EstatesService {
     /**
      * 删除小区信息
      *
-     * @param estatesId 小区id
+     * @param estates 小区id
      * @return Result
      */
     @Override
-    public Result<Object> deleteEstatesById(Long estatesId) {
+    public Result<Object> deleteEstatesById(Estates estates) {
         try {
-            estatesMapper.deleteById(estatesId);
+            estatesMapper.deleteById(estates.getId());
             return ResultUtil.success();
         } catch (Exception e) {
             log.error("删除小区信息失败，原因：{}", e.getMessage());
