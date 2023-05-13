@@ -32,4 +32,9 @@ public class Parkingspaces {
      * 所属房产
      */
     private String building;
+    /**
+     * 车位所属业主
+     * 业主id
+     */
+    private Long owner;
 }

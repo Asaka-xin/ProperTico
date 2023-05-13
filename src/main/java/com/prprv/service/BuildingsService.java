@@ -8,6 +8,7 @@ import com.prprv.entity.Buildings;
  * @author Christine
  * @version 1.0
  * @since 2023/5/11
+ * @see BuildingsServiceImpl
  */
 public interface BuildingsService {
 
@@ -19,11 +20,25 @@ public interface BuildingsService {
     Result<Object> createBuildings(Buildings buildings);
 
     /**
-     * 楼栋列表展示
-     * @param buildings 楼栋信息
+     * 根据楼栋编号查询楼栋信息
+     * @param id 楼栋编号
      * @return Result
      */
-    Result<Object> selectBuildings(Buildings buildings);
+    Result<Object> selectBuildingsById(Long id);
+
+    /**
+     * 楼栋列表分页展示
+     * @param page 页码
+     * @param size 每页数量
+     * @return Result
+     */
+    Result<Object> selectBuildingsByPage(Integer page, Integer size);
+
+    /**
+     * 查询所有楼栋信息
+     * @return Result
+     */
+    Result<Object> selectBuildings();
 
     /**
      * 楼栋信息修改
@@ -34,8 +49,8 @@ public interface BuildingsService {
 
     /**
      * 楼栋信息移除
-     * @param buildings 楼栋信息
+     * @param id 楼栋编号
      * @return Result
      */
-    Result<Object> deleteBuildings(Buildings buildings);
+    Result<Object> deleteBuildingsById(Long id);
 }
