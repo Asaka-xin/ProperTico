@@ -60,4 +60,36 @@ public class UserServiceImpl implements UserService{
             return ResultUtil.error(ResultEnum.ERROR,e.getMessage());
         }
     }
+
+    /**
+     * 删除用户
+     *
+     * @param id 用户id
+     * @return Result
+     */
+    @Override
+    public Result<Object> deleteUserById(Long id) {
+        try {
+            userMapper.deleteById(id);
+            return ResultUtil.success();
+        }catch (Exception e){
+            return ResultUtil.error(ResultEnum.ERROR,e.getMessage());
+        }
+    }
+
+    /**
+     * 更新用户信息
+     *
+     * @param user 用户信息
+     * @return Result
+     */
+    @Override
+    public Result<Object> updateUser(User user) {
+        try {
+            userMapper.updateById(user);
+            return ResultUtil.success();
+        }catch (Exception e){
+            return ResultUtil.error(ResultEnum.ERROR,e.getMessage());
+        }
+    }
 }
