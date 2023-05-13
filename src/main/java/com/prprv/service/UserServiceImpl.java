@@ -15,6 +15,8 @@ import org.springframework.stereotype.Service;
  * @author phj233
  * @since 2023/5/12 15:33
  */
+
+
 @Service
 @RequiredArgsConstructor
 public class UserServiceImpl implements UserService{
@@ -37,6 +39,12 @@ public class UserServiceImpl implements UserService{
         }
     }
 
+    /**
+     * 分页查询所有用户
+     * @param page 页码
+     * @param size 每页数量
+     * @return Result
+     */
     @Override
     public Result<Object> findAllUserByPage(Integer page, Integer size) {
         try {
@@ -49,7 +57,6 @@ public class UserServiceImpl implements UserService{
 
     /**
      * 查询所有用户
-     *
      * @return Result
      */
     @Override
@@ -63,7 +70,6 @@ public class UserServiceImpl implements UserService{
 
     /**
      * 删除用户
-     *
      * @param id 用户id
      * @return Result
      */
@@ -79,7 +85,6 @@ public class UserServiceImpl implements UserService{
 
     /**
      * 更新用户信息
-     *
      * @param user 用户信息
      * @return Result
      */
