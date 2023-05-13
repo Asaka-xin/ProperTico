@@ -27,27 +27,27 @@
 
 user
 
-|     字段      |     数据类型     |             约束              |  注释  |   备注   |
-|:-----------:|:------------:|:---------------------------:|:----:|:------:|
-|     id      |    BIGINT    | PRIMARY KEY, AUTO_INCREMENT |  ID  |   主键   |
-|    name     | VARCHAR(255) |          NOT NULL           | 用户名称 |   /    |
-|    email    | VARCHAR(255) |          NOT NULL           | 用户邮箱 |   /    |
-|  password   | VARCHAR(255) |          NOT NULL           | 用户密码 |   /    |
-|    phone    |    BIGINT    |          NOT NULL           | 用户电话 |   /    |
+|    字段     |   数据类型   |            约束             |   注释   |     备注     |
+| :---------: | :----------: | :-------------------------: | :------: | :----------: |
+|     id      |    BIGINT    | PRIMARY KEY, AUTO_INCREMENT |    ID    |     主键     |
+|    name     | VARCHAR(255) |          NOT NULL           | 用户名称 |      /       |
+|    email    | VARCHAR(255) |          NOT NULL           | 用户邮箱 |      /       |
+|  password   | VARCHAR(255) |          NOT NULL           | 用户密码 |      /       |
+|    phone    | VARCHAR(255) |          NOT NULL           | 用户电话 |      /       |
 | create_time |     DATE     |          NOT NULL           | 注册时间 | 自动当前时间 |
 
 ## 报修工单表
 
 maintenancerequests
 
-|      字段       |     数据类型     |             约束              |  注释  |   备注   |
-|:-------------:|:------------:|:---------------------------:|:----:|:------:|
-|      id       |    BIGINT    | PRIMARY KEY, AUTO_INCREMENT | 工单编号 |   /    |
-|   username    | VARCHAR(255) |          NOT NULL           | 用户名  |  name  |
-|     phone     |    BIGINT    |          NOT NULL           | 联系方式 | phone  |
-|  description  | VARCHAR(255) |          NOT NULL           | 报修信息 |   /    |
+|     字段      |   数据类型   |            约束             |   注释   |     备注     |
+| :-----------: | :----------: | :-------------------------: | :------: | :----------: |
+|      id       |    BIGINT    | PRIMARY KEY, AUTO_INCREMENT | 工单编号 |      /       |
+|   username    | VARCHAR(255) |          NOT NULL           |  用户名  |     name     |
+|     phone     | VARCHAR(255) |          NOT NULL           | 联系方式 |    phone     |
+|  description  | VARCHAR(255) |          NOT NULL           | 报修信息 |      /       |
 | requests_time |     DATE     |          NOT NULL           | 提交时间 | 自动当前时间 |
-|    status     | VARCHAR(255) |          NOT NULL           | 报修状态 | 已/待处理  |
+|    status     | VARCHAR(255) |          NOT NULL           | 报修状态 |  已/待处理   |
 
 ## 小区表
 

@@ -1,4 +1,3 @@
--- Database.name = propertico
 create table buildings
 (
     id      bigint auto_increment
@@ -22,7 +21,7 @@ create table estates
         primary key,
     name    varchar(255) not null,
     address varchar(255) not null,
-    esphone bigint       not null comment 'phone for estate'
+    esphone varchar(255) not null comment 'phone for estate'
 );
 
 create table maintenancerequests
@@ -30,7 +29,7 @@ create table maintenancerequests
     id            bigint auto_increment
         primary key,
     username      varchar(255) not null comment 'repair for',
-    phone         bigint       not null comment 'telephone',
+    phone         varchar(255) not null comment 'telephone',
     description   varchar(255) not null comment 'repair info',
     requests_time datetime     not null comment 'commit time',
     status        varchar(255) not null comment 'status'
@@ -71,7 +70,7 @@ create table user
     name        varchar(255) not null comment 'username',
     email       varchar(255) not null comment 'mail',
     password    varchar(255) not null comment 'passwd',
-    phone       bigint       not null comment 'telephone',
+    phone       varchar(255) not null comment 'telephone',
     create_time datetime     null comment 'time for registry'
 );
 
