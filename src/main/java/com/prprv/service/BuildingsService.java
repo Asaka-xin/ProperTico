@@ -49,8 +49,8 @@ public interface BuildingsService {
 
     /**
      * 楼栋信息移除
-     * @param id 楼栋编号
+     * @param buildings 楼栋信息
      * @return Result
      */
-    Result<Object> deleteBuildingsById(Long id);
+    Result<Object> deleteBuildingsById(Buildings buildings);
 }

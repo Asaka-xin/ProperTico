@@ -24,7 +24,6 @@ public class BuildingsServiceImpl implements BuildingsService{
 
     /**
      * 新增楼栋
-     *
      * @param buildings 楼栋信息
      * @return Result
      */
@@ -49,7 +48,6 @@ public class BuildingsServiceImpl implements BuildingsService{
 
     /**
      * 根据楼栋编号查询楼栋信息
-     *
      * @param id 楼栋编号
      * @return Result
      */
@@ -65,7 +63,6 @@ public class BuildingsServiceImpl implements BuildingsService{
 
     /**
      * 楼栋列表分页展示
-     *
      * @param page 页码
      * @param size 每页数量
      * @return Result
@@ -83,7 +80,6 @@ public class BuildingsServiceImpl implements BuildingsService{
 
     /**
      * 查询所有楼栋信息
-     *
      * @return Result
      */
     @Override
@@ -98,7 +94,6 @@ public class BuildingsServiceImpl implements BuildingsService{
 
     /**
      * 楼栋信息修改
-     *
      * @param buildings 楼栋信息
      * @return Result
      */
@@ -115,14 +110,13 @@ public class BuildingsServiceImpl implements BuildingsService{
 
     /**
      * 楼栋信息移除
-     *
-     * @param id 楼栋编号
+     * @param buildings 楼栋编号
      * @return Result
      */
     @Override
-    public Result<Object> deleteBuildingsById(Long id) {
+    public Result<Object> deleteBuildingsById(Buildings buildings) {
         try {
-            buildingsMapper.deleteById(id);
+            buildingsMapper.deleteById(buildings.getId());
             return ResultUtil.success();
         } catch (Exception e) {
             log.error("删除楼栋信息失败，原因：{}", e.getMessage());
