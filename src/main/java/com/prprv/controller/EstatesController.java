@@ -27,7 +27,6 @@ public class EstatesController {
      */
     @PostMapping("/create")
     public Object createEstates(@RequestBody Estates estates) {
-        log.info("/api/estates/create:" + estates);
         return estatesService.createEstates(estates);
     }
 
@@ -38,8 +37,6 @@ public class EstatesController {
      */
     @PostMapping("/update")
     public Object updateEstates(@RequestBody Estates estates) {
-//     根据ID更新记录
-        log.info("/api/estates/update:" + estates);
         return estatesService.updateEstates(estates);
     }
 
@@ -50,20 +47,16 @@ public class EstatesController {
      */
     @GetMapping("/delete")
     public Object deleteEstates(@RequestBody Estates estates) {
-//        System.out.println(estatesId);
         return estatesService.deleteEstatesById(estates);
     }
 
     /**
-     * 小区信息展示接口
+     * 查询小区信息
      * @return object
      */
     @GetMapping("/select")
     public Object selectEstates() {
-        log.info("/api/estates/select");
         return estatesService.selectEstates();
     }
 
-
-    }
-
+}

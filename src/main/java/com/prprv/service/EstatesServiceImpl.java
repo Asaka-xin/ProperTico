@@ -24,7 +24,6 @@ public class EstatesServiceImpl implements EstatesService {
 
     /**
      * 新增小区
-     *
      * @param estates 小区信息
      * @return Result
      */
@@ -48,8 +47,7 @@ public class EstatesServiceImpl implements EstatesService {
     }
 
     /**
-     * 更新小区信息
-     *
+     * 根据ID更新小区信息
      * @param estates 小区信息
      * @return Result
      */
@@ -65,13 +63,16 @@ public class EstatesServiceImpl implements EstatesService {
     }
 
     /**
-     * 删除小区信息
-     *
+     * 根据ID删除小区信息
      * @param estates 小区id
      * @return Result
      */
     @Override
     public Result<Object> deleteEstatesById(Estates estates) {
+        Estates selectedEstates = estatesMapper.selectById(estates.getId());
+        if (selectedEstates == null) {
+            return ResultUtil.error(ResultEnum.PROPERTY_NOT_FOUND);
+        }
         try {
             estatesMapper.deleteById(estates.getId());
             return ResultUtil.success();
@@ -83,7 +84,6 @@ public class EstatesServiceImpl implements EstatesService {
 
     /**
      * 小区信息展示
-     *
      * @return Result
      */
     @Override
@@ -98,7 +98,6 @@ public class EstatesServiceImpl implements EstatesService {
 
     /**
      * 分页查询小区信息
-     *
      * @param page 页码
      * @param size 每页数量
      * @return Result
@@ -116,7 +115,6 @@ public class EstatesServiceImpl implements EstatesService {
 
     /**
      * 根据小区id查询小区信息
-     *
      * @param estatesId 小区id
      * @return Result
      */
