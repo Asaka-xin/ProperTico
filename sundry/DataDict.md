@@ -58,7 +58,7 @@ estates
 |   id    |    BIGINT    | PRIMARY KEY, AUTO_INCREMENT |  ID  | /  |
 |  name   | VARCHAR(255) |          NOT NULL           | 小区名称 | /  |
 | address | VARCHAR(255) |          NOT NULL           | 小区地址 | /  |
-| esphone |    BIGINT    |          NOT NULL           | 联系方式 | /  |
+| esphone | VARCHAR(255) |          NOT NULL           | 联系方式 | /  |
 
 ## 楼栋表
 
