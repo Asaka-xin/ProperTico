@@ -8,6 +8,7 @@ import com.prprv.entity.Properties;
  * @author Christine
  * @version 1.0
  * @since 2023/5/11
+ * @see PropertiesServiceImpl
  */
 public interface PropertiesService {
 
@@ -20,10 +21,38 @@ public interface PropertiesService {
 
     /**
      * 房产列表展示
-     * @param properties 房产信息
      * @return Result
      */
-    Result<Object> selectProperties(Properties properties);
+    Result<Object> selectProperties();
+
+    /**
+     * 根据持有人查询房产
+     * @param user 持有人名字
+     * @return Result
+     */
+    Result<Object> getPropertiesByUser(String user);
+
+    /**
+     * 根据小区查询房产
+     * @param estates 小区名字
+     * @return Result
+     */
+    Result<Object> getPropertiesByEstates(String estates);
+
+    /**
+     * 房产信息查询
+     * @param id 房产id
+     * @return Result
+     */
+    Result<Object> getPropertiesById(Long id);
+
+    /**
+     * 分页查询房产
+     * @param page 页码
+     * @param size 每页数量
+     * @return Result
+     */
+    Result<Object> findAllPropertiesByPage(Integer page, Integer size);
 
     /**
      * 房产信息修改
