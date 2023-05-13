@@ -16,6 +16,7 @@ import org.springframework.stereotype.Service;
  * @author phj233
  * @since 2023/5/13 15:09
  */
+
 @Service
 @Slf4j
 @RequiredArgsConstructor
@@ -24,7 +25,6 @@ public class MaintenancerequestsServiceImpl implements MaintenancerequestsServic
 
     /**
      * 创建报修记录
-     *
      * @param maintenancerequests 报修维护信息
      * @return Result
      */
@@ -49,7 +49,6 @@ public class MaintenancerequestsServiceImpl implements MaintenancerequestsServic
 
     /**
      * 更新报修状态
-     *
      * @param maintenancerequests 报修维护信息
      * @return Result
      */
@@ -66,7 +65,6 @@ public class MaintenancerequestsServiceImpl implements MaintenancerequestsServic
 
     /**
      * 查询报修记录
-     *
      * @return Result
      */
     @Override
@@ -81,7 +79,6 @@ public class MaintenancerequestsServiceImpl implements MaintenancerequestsServic
 
     /**
      * 分页查询报修记录
-     *
      * @param page 页码
      * @param size 每页大小
      * @return Result
@@ -99,7 +96,6 @@ public class MaintenancerequestsServiceImpl implements MaintenancerequestsServic
 
     /**
      * 根据工单编号查询报修记录
-     *
      * @param id 工单编号
      * @return Result
      */
@@ -115,14 +111,13 @@ public class MaintenancerequestsServiceImpl implements MaintenancerequestsServic
 
     /**
      * 删除报修记录
-     *
      * @param id 工单编号
      * @return Result
      */
     @Override
-    public Result<Object> deleteMaintenancerequestsById(Long id) {
+    public Result<Object> deleteMaintenancerequestsById(Maintenancerequests maintenancerequests) {
         try{
-            maintenancerequestsMapper.deleteById(id);
+            maintenancerequestsMapper.deleteById(maintenancerequests.getId());
             return ResultUtil.success();
         }catch (Exception e) {
             log.error("删除报修记录失败，原因：{}", e.getMessage());

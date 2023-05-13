@@ -14,7 +14,6 @@ public interface MaintenancerequestsService {
 
     /**
      * 创建报修记录
-     *
      * @param maintenancerequests 报修维护信息
      * @return Result
      */
@@ -22,28 +21,24 @@ public interface MaintenancerequestsService {
 
     /**
      * 更新报修状态
-     *
      * @return Result
      */
     Result<Object> updateMaintenancerequests(Maintenancerequests maintenancerequests);
 
     /**
      * 查询报修记录
-     *
      * @return Result
      */
     Result<Object> getMaintenancerequests();
 
     /**
      * 分页查询报修记录
-     *
      * @return Result
      */
     Result<Object> getAllMaintenancerequestsByPage(Integer page, Integer size);
 
     /**
      * 根据工单编号查询报修记录
-     *
      * @param id 工单编号
      * @return Result
      */
@@ -54,5 +49,5 @@ public interface MaintenancerequestsService {
      * @param id 工单编号
      * @return Result
      */
-    Result<Object> deleteMaintenancerequestsById(Long id);
+    Result<Object> deleteMaintenancerequestsById(Maintenancerequests maintenancerequests);
 }
