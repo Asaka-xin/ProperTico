@@ -8,6 +8,7 @@ import com.prprv.entity.User;
  * @author Christine
  * @version 1.0
  * @since 2023/5/11
+ * @see UserServiceImpl
  */
 public interface UserService {
     /**
@@ -31,4 +32,18 @@ public interface UserService {
      * @return Result
      */
     Result<Object> findAllUser();
+
+    /**
+     * 删除用户
+     * @param id 用户id
+     * @return Result
+     */
+    Result<Object> deleteUserById(Long id);
+
+    /**
+     * 更新用户信息
+     * @param user 用户信息
+     * @return Result
+     */
+    Result<Object> updateUser(User user);
 }
