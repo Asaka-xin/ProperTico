@@ -25,4 +25,25 @@ public interface VisitorsService {
      * @return Result
      */
     Result<Object> getVisitors(String name);
+
+    /**
+     * 分页查询访客记录
+     * @param page 页码
+     * @param size 每页数量
+     * @return Result
+     */
+    Result<Object> findAllVisitorsByPage(Integer page, Integer size);
+
+    /**
+     * 查询所有访客记录
+     * @return Result
+     */
+    Result<Object> findAllVisitors();
+
+    /**
+     * 删除访客记录
+     * @param id 序列号
+     */
+    Result<Object> deleteVisitors(Long id);
+
 }
