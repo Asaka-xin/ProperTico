@@ -25,7 +25,6 @@ public class PropertiesServiceImpl implements PropertiesService{
 
     /**
      * 新增房产
-     *
      * @param properties 房产信息
      * @return Result
      */
@@ -50,7 +49,6 @@ public class PropertiesServiceImpl implements PropertiesService{
 
     /**
      * 房产列表展示
-     *
      * @return Result
      */
     @Override
@@ -65,7 +63,6 @@ public class PropertiesServiceImpl implements PropertiesService{
 
     /**
      * 根据持有人查询房产
-     *
      * @param user 持有人名字
      * @return Result
      */
@@ -85,7 +82,6 @@ public class PropertiesServiceImpl implements PropertiesService{
 
     /**
      * 根据小区查询房产
-     *
      * @param estates 小区名字
      * @return Result
      */
@@ -105,7 +101,6 @@ public class PropertiesServiceImpl implements PropertiesService{
 
     /**
      * 房产信息查询
-     *
      * @param id 房产id
      * @return Result
      */
@@ -121,7 +116,6 @@ public class PropertiesServiceImpl implements PropertiesService{
 
     /**
      * 分页查询房产
-     *
      * @param page 页码
      * @param size 每页数量
      * @return Result
@@ -139,7 +133,6 @@ public class PropertiesServiceImpl implements PropertiesService{
 
     /**
      * 房产信息修改
-     *
      * @param properties 房产信息
      * @return Result
      */
@@ -156,7 +149,6 @@ public class PropertiesServiceImpl implements PropertiesService{
 
     /**
      * 房产信息移除
-     *
      * @param properties 房产信息
      * @return Result
      */
