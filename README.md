@@ -22,6 +22,8 @@
 
 这是一个**Gradle**项目，没有什么新的技术。
 
+**船新版本**：https://github.com/Yoooum/property-hive
+
 前端：____
 
 后端：（当前位置）
