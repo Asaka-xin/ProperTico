@@ -56,7 +56,7 @@ public class BuildingsController {
      */
     @GetMapping("/delete")
     public Object deleteBuildings(@RequestBody Buildings buildings) {
-        return buildingsService.deleteBuildingsById(buildings);
+        return ResultUtil.success(buildingsService.deleteBuildingsById(buildings));
     }
 
     /**
